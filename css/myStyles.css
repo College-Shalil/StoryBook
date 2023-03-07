@@ -1,0 +1,184 @@
+/* 
+Website Name: Alice's Adventures in Wonderland
+Website Author: Shalil Dsilva
+Student id: 0810045 
+
+Color Guide:
+#D9AFD9 - Light Pink
+#97D9E1 - Light Blue
+#f3f6f9 - light Grey
+
+Typography Guide:
+body: Rubik, arial, sans-serif;
+h1: merriweatherregular, arial, sans-serif;
+h2: creepsterregular, arial, sans-serif;
+figcaption: inconsolataregular, arial, sans-serif;
+
+*********************************
+=================
+Table of Contents
+=================
+1. Font Face
+2. Body Styles
+3. Header Styles 
+4. Main Styles
+5. Link Styles
+*********************************
+*/
+
+
+
+/*******************
+1. Font Face 
+********************/
+
+@font-face {
+    font-family: 'inconsolataregular';
+    src: url('../fonts/inconsolata-variablefont_wdthwght-webfont.eot');
+    src: url('../fonts/inconsolata-variablefont_wdthwght-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+        url('../fonts/inconsolata-variablefont_wdthwght-webfont.woff') format('woff'),
+        url('../fonts/inconsolata-variablefont_wdthwght-webfont.ttf') format('truetype'),
+        url('../fonts/inconsolata-variablefont_wdthwght-webfont.svg#inconsolataregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('../fonts/merriweather-regular-webfont.eot');
+    src: url('../fonts/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
+        url('../fonts/merriweather-regular-webfont.woff') format('woff'),
+        url('../fonts/merriweather-regular-webfont.ttf') format('truetype'),
+        url('../fonts/merriweather-regular-webfont.svg#merriweatherregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'creepsterregular';
+    src: url('../fonts/creepster-regular-webfont.eot');
+    src: url('../fonts/creepster-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/creepster-regular-webfont.woff2') format('woff2'),
+        url('../fonts/creepster-regular-webfont.woff') format('woff'),
+        url('../fonts/creepster-regular-webfont.ttf') format('truetype'),
+        url('../fonts/creepster-regular-webfont.svg#creepsterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*******************
+2. Body Styles 
+********************/
+body {
+    font-family: 'Rubik', Arial, sans-serif;
+    line-height: 30px;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+body>figure {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+body>figure img {
+    width: 80px;
+}
+
+/*******************
+3. Header Styles 
+********************/
+header {
+    position: sticky;
+    top: 0;
+    background-color: #f3f6f9;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'merriweatherregular', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+header p {
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+
+/*******************
+4. Main Styles 
+********************/
+main figure {
+    text-align: center;
+    padding-top: 30px;
+}
+
+main figure img {
+    width: 300px;
+    height: 400px;
+}
+
+main figure figcaption {
+    font-family: 'inconsolataregular', Arial, sans-serif;
+    line-height: 10px;
+}
+
+main article,
+main h2 {
+    margin: auto;
+    width: 80%;
+}
+
+h2 {
+    font-family: 'creepsterregular', Arial, sans-serif;
+    font-size: 26px;
+    padding-top: 50px;
+    text-decoration: underline;
+}
+
+article p {
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+article p:last-child {
+    padding-bottom: 30px;
+}
+
+/*******************
+5. Link Styles 
+********************/
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
